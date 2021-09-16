@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>web lab №1</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+</head>
+<body>
+<table id="main_table">
+  <tr>
+    <th colspan="2" id="header">Шагиев Семён P3231 вариант 31017</th>
+  </tr>
+  <tr>
+    <td>
+      <img src="coordinates3.png" alt="coordinates picture">
+      <form id="main_form" method="get" action="" onsubmit="return handleForm()">
+        <div class="input-container">
+          X :
+          <label>
+            <input type="radio" name="x" value="-5">
+            -5
+          </label>
+          <label>
+            <input type="radio" name="x" value="-4">
+            -4
+          </label>
+          <label>
+            <input type="radio" name="x" value="-3">
+            -3
+          </label>
+          <label>
+            <input type="radio" name="x" value="-2">
+            -2
+          </label>
+          <label>
+            <input type="radio" name="x" value="-1">
+            -1
+          </label>
+          <label>
+            <input type="radio" name="x" value="0">
+            0
+          </label>
+          <label>
+            <input type="radio" name="x" value="1">
+            1
+          </label>
+          <label>
+            <input type="radio" name="x" value="2">
+            2
+          </label>
+          <label>
+            <input type="radio" name="x" value="3">
+            3
+          </label>
+        </div>
+        <br>
+        <div class="input-container">
+          Y :
+          <label>
+            <input type="text" name="y" placeholder="значение от -5 до 5">
+          </label>
+        </div>
+        <br>
+        <div class="input-container">
+          R :
+          <label>
+            <input type="radio" name="r" value="1">
+            1
+          </label>
+          <label>
+            <input type="radio" name="r" value="2">
+            2
+          </label>
+          <label>
+            <input type="radio" name="r" value="3">
+            3
+          </label>
+          <label>
+            <input type="radio" name="r" value="4">
+            4
+          </label>
+          <label>
+            <input type="radio" name="r" value="5">
+            5
+          </label>
+        </div>
+        <br>
+        <button type="submit" name="submit">Проверить</button>
+      </form>
+    </td>
+    <td>
+      <table id="response_table">
+        <thead>
+        <td>Результат</td>
+        <td>X</td>
+        <td>Y</td>
+        <td>R</td>
+        <td>Время</td>
+        <td>Выполнение</td>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

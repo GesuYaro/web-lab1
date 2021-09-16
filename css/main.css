@@ -1,0 +1,66 @@
+body {
+    background: linear-gradient(to bottom right, #23d5ab, #23a6d5, #9a3ce7) no-repeat center center fixed;
+}
+#main_table {
+    border: none;
+    padding: 0;
+    width: 100%;
+}
+
+#header {
+    font-family: serif;
+    font-size: xx-large;
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    border-radius: 20px;
+}
+
+#response_table {
+    width: 100%;
+    border: 1px solid aliceblue;
+    border-radius: 10px;
+    border-spacing: 0;
+    text-align: center;
+    margin-top: 3%;
+}
+
+button {
+    border-radius: 9px;
+    opacity: 80%;
+    border: none;
+}
+
+#response_table > thead {
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 100%;
+}
+
+button[type="submit"] {
+    background-color: aliceblue;
+    width: 80%;
+}
+
+input[name="y"] {
+    border: none;
+    border-radius: 9px;
+}
+
+.error-hovered {
+    border: 1px solid red;
+    border-radius: 7px;
+}
+
+#main_table tr td {
+    vertical-align: top;
+}
+
+#main_table tr:nth-child(2) td:first-child {
+    width: 30%;
+}
+
+/* родительская ячейка по отношению к #response_table */
+#main_table tr:nth-child(2) td:nth-child(2) {
+}
