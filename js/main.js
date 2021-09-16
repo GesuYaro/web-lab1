@@ -8,6 +8,9 @@ function handleForm() {
 function request() {
     let x = getRadio('x').eq(0).val();
     let y = getY().eq(0).val();
+    if (y == 0) {
+        y = 0;
+    }
     let r = getRadio('r').eq(0).val();
     let currentTime = new Date().getTimezoneOffset();
     $.ajax({
@@ -61,7 +64,7 @@ function validateRadio(name) {
 }
 
 function validateY() {
-    return getY().val().match(/^-?[0-5]+$/);
+    return getY().val().match(/^-?[0-5]$/);
 }
 
 function getRadio(name) {

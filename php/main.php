@@ -25,6 +25,10 @@ function hit($x, $y, $r)
 if (isset($_GET["x"]))
 {
     $x = $_GET["x"];
+    if ($x === "-0")
+    {
+        $x = 0;
+    }
 }
 if (isset($_GET["y"]))
 {
