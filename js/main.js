@@ -64,7 +64,8 @@ function validateRadio(name) {
 }
 
 function validateY() {
-    return getY().val().match(/^-?[0-5]$/);
+    let y = getY().val();
+    return y.match(/^-?[0-5]\.?[0-9]{0,5}$/) && y >= -3 && y <= 5;
 }
 
 function getRadio(name) {
